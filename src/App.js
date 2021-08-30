@@ -1,6 +1,7 @@
 import React , {useState} from 'react';
 import './App.css';
 import { Grid, Button, TextField} from '@material-ui/core'
+import Delete, {} from '@material-ui/icons/Delete'
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
 
   function customMe() {
     // setcolor("secondary");
-     alert("Muhammad Anis");
+     alert(name);
     
   }
 
@@ -33,7 +34,9 @@ function App() {
           <Button 
           color={color}
           variant="outlined" 
-          onClick={()=> { customMe() }}>
+          onClick={()=> { customMe() }} 
+          endIcon={<Delete/>}>
+            
             Click me
           </Button>
         </Grid>
